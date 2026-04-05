@@ -116,7 +116,12 @@ color: white;
     width: 30%;
     display: inline-block;
     border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background: #ffffff;
+    vertical-align: top;
 }
+
 .content .menuNews {
     position: relative;
     width: 30%;
@@ -132,10 +137,13 @@ color: white;
 
 .content .menu .imgStamp {
     position: relative;
-    width: 100%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3);
 }
+
 .content .menuNews .imgStampNews {
     display: block;
     width: 100%;
@@ -450,4 +458,43 @@ p, .TxtSobre, .TxtCatalogo {
         font-size: 16px;
         margin: 20px auto;
     }
+}
+.info-jogo {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.preco {
+    font-weight: bold;
+    color: green;
+}
+
+.imgStamp {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.imgStamp:hover {
+    transform: scale(1.05);
+}
+
+.content .first {
+    position: relative;
+    margin-top: 10px;
+    background: transparent;
+    padding: 40px;
+}
+
+.content .second {
+    position: relative;
+    margin-top: 10px;
+    background: transparent;
+    padding: 40px;
+}
+.content .menu {
+    width: 220px;
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
 }

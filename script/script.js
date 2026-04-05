@@ -183,3 +183,21 @@ function closeModal() {
     document.getElementById("knowMore").style.display = 'none';
 }
 
+function toggleInfo(imagem) {
+
+    const card = imagem.parentElement;
+
+    const info =
+        card.querySelector(".info-jogo");
+
+    if (info.style.display === "block") {
+
+        info.style.display = "none";
+
+    } else {
+
+        info.style.display = "block";
+
+    }
+
+}
