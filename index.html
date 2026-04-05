@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- PAGINA INICIAL COM OS MAIS VENDIDOS -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovart'Sandra</title>
+    <link rel="stylesheet" href="css/Style.css" type="text/css">
+    <link rel="icon" type="image/png" href="img/Logo.png">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="index.html">Pagina Inicial</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="Sobre.html">Sobre</a>
+    </div>
+
+    <div class="content">
+        <h2 class="titleTop">Inovart'Sandra</h2>
+        <h3 class="titleBottom">Mais Vendidos</h3>
+
+        <p class="TxtSobre">
+            Conheça alguns dos produtos mais procurados da Inovart'Sandra. Cada peça foi criada com cuidado, criatividade e atenção a cada detalhe.
+        </p>
+        <p class="TxtSobre">
+            Ao final na Página Sobre terá um Questionário, sua Opinião é muito importante para nos!!
+        </p>
+
+        <!-- Primeira linha de produtos -->
+        <div class="first">
+            <div class="menu">
+                <img class="imgStamp" src="img/NecessarieP.jpg" alt="Produto Necessarie P">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('NecessarieP.jpg', this);">
+            </div>
+            <div class="menu">
+                <img class="imgStamp" src="img/BonecaEVA.jpg" alt="Produto BonecaEVA">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('BonecaEVA.jpg', this)">
+            </div>
+            <div class="menu">
+                <img class="imgStamp" src="img/PortaTesoura.jpg" alt="Produto Porta Tesoura">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('PortaTesoura.jpg', this)">
+            </div>
+        </div>
+
+        <!-- Segunda linha de produtos -->
+        <div class="second">
+            <div class="menu">
+                <img class="imgStamp" src="img/Almofada.jpg" alt="Produto Almofada">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('Almofada.jpg', this)">
+            </div>
+            <div class="menu">
+                <img class="imgStamp" src="img/NecessarieM.jpg" alt="Produto NecessarieM">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('NecessarieM.jpg', this)">
+            </div>
+            <div class="menu">
+                <img class="imgStamp" src="img/LuvasDeForno.jpg" alt="Produto LuvasDeForno">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('LuvasDeForno.jpg', this)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Detalhes -->
+    <div id="knowMore" class="modal">
+        <header>
+            <span onclick="closeModal();" class="topright">X</span>
+        </header>
+        <div>
+            <p id="txt1" class="infoH"></p>
+            <p id="txt2" class="info"></p>
+            <p id="txt3" class="info"></p>
+        </div>
+    </div>
+
+    <!-- Referência ao arquivo Javascript -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
