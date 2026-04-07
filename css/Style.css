@@ -50,7 +50,7 @@ color: white;
     margin-left: 200px;
     width: calc(100% - 200px);
     background: transparent;
-    display: grid;
+    display: block;
     overflow: auto;
     height: 100%;
 }
@@ -73,12 +73,6 @@ color: white;
     color: var(--titulo-bg);
 }
 
-.content .first {
-    position: relative;
-    margin-top: 10px;
-    background: #fff;
-    padding: 40px;
-}
 .content .second {
     position: relative;
     margin-top: 10px;
@@ -111,6 +105,10 @@ color: white;
     padding-left: 10px;
     text-align: center;
 }
+.content {
+    text-align: center;
+}
+
 .content .menu {
     position: relative;
     width: 30%;
@@ -131,17 +129,15 @@ color: white;
 }
 
 .imgStamp {
-    background-color: #f5f5f5;
-    padding: 3px;
+    padding: 0;
+    background: transparent;
 }
 
 .content .menu .imgStamp {
-    position: relative;
     width: 220px;
-    height: 220px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3);
 }
 
 .content .menuNews .imgStampNews {
@@ -357,17 +353,6 @@ p, .TxtSobre, .TxtCatalogo {
     }
 
     /* Conteúdo se expande e ocupa tela*/
-    .content {
-        margin-left: 0;
-        width: 100%;
-        padding: 10px;
-    }
-
-    /* 1 produto por linha */
-    .content .menu {
-        width: 100%;
-        margin-bottom: 20px;
-    }
 
     /* titulo menor */
     .titleTop,
@@ -459,7 +444,7 @@ p, .TxtSobre, .TxtCatalogo {
         margin: 20px auto;
     }
 }
-.info-jogo {
+.info-jogos {
     display: none;
     margin-top: 10px;
     font-size: 14px;
@@ -480,10 +465,10 @@ p, .TxtSobre, .TxtCatalogo {
 }
 
 .content .first {
-    position: relative;
-    margin-top: 10px;
-    background: transparent;
-    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .content .second {
@@ -491,10 +476,4 @@ p, .TxtSobre, .TxtCatalogo {
     margin-top: 10px;
     background: transparent;
     padding: 40px;
-}
-.content .menu {
-    width: 220px;
-    display: inline-block;
-    margin: 15px;
-    text-align: center;
 }
