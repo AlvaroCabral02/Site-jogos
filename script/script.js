@@ -3,7 +3,7 @@ const meusJogos = [
     { 
         nome: "Dark Souls III", 
         plataforma: "ps4", 
-        img: "DarkSoulsIII.jpg", 
+        img: "DARK_SOULS_III.jpg", 
         preco: "190,00", 
         raridade: "Edição completa", 
         estado: "Excelente", 
@@ -12,7 +12,7 @@ const meusJogos = [
     { 
         nome: "Ghost Recon Wildlands", 
         plataforma: "ps4", 
-        img: "GhostReconWild.jpg", 
+        img: "GHOST_RECON_WILD.jpg", 
         preco: "80,00", 
         raridade: "Comum", 
         estado: "Bom", 
@@ -30,12 +30,75 @@ const meusJogos = [
     { 
         nome: "God of War 4", 
         plataforma: "ps4", 
-        img: "GodOfWar4.jpg", 
+        img: "GODOFWAR4.jpg", 
         preco: "60,00", 
         raridade: "Bundle", 
         estado: "Bom", 
         status: "Apenas Venda" 
-    }
+    },
+    { 
+        nome: "Assasins Cred Black Flag", 
+        plataforma: "ps3", 
+        img: "Assassins_Creed_Black.jpg", 
+        preco: "80,00", 
+        raridade: "Comun", 
+        estado: "Bom", 
+        status: "Venda" 
+    },,
+    { 
+        nome: "Deadrising 3", 
+        plataforma: "Xbox One", 
+        img: "DEADRISING_3.jpg", 
+        preco: "80,00", 
+        raridade: "Comun", 
+        estado: "Bom", 
+        status: "Venda" 
+    },,
+    { 
+        nome: "Detroit Become Human", 
+        plataforma: "ps4", 
+        img: "DETROIT_BECOME_HUMAN.jpg", 
+        preco: "80,00", 
+        raridade: "Comun", 
+        estado: "Bom", 
+        status: "Venda" 
+    },,
+    { 
+        nome: "Bloodborne", 
+        plataforma: "ps5", 
+        img: "Bloodborne.jpg", 
+        preco: "80,00", 
+        raridade: "Playstaton Hits", 
+        estado: "Excelente", 
+        status: "Venda/Troca" 
+    },,
+    { 
+        nome: "Bloodborne", 
+        plataforma: "ps4", 
+        img: "Bloodborne.jpg", 
+        preco: "80,00", 
+        raridade: "Playstaton Hits", 
+        estado: "Excelente", 
+        status: "Venda/Troca" 
+    },,
+    { 
+        nome: "Bloodborne", 
+        plataforma: "ps4", 
+        img: "Bloodborne.jpg", 
+        preco: "80,00", 
+        raridade: "Playstaton Hits", 
+        estado: "Excelente", 
+        status: "Venda/Troca" 
+    },,
+    { 
+        nome: "Bloodborne", 
+        plataforma: "ps4", 
+        img: "Bloodborne.jpg", 
+        preco: "80,00", 
+        raridade: "Playstaton Hits", 
+        estado: "Excelente", 
+        status: "Venda/Troca" 
+    },
 
 ];
 
@@ -107,16 +170,13 @@ function closeModal() {
     document.getElementById("knowMore").style.display = 'none';
 }
 
-//WHATSZAPP
 function enviarWhatsApp(nomeProduto) {
     const numeroTelefone = "5541995467349"; 
     const mensagem = `Olá! tenho interesse no jogo: ${nomeProduto}`;
     window.open(`https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`, '_blank');
 }
 
-// ==========================================
-// 6. INICIALIZAÇÃO
-// ==========================================
+// renderização
 window.onload = () => {
     renderizarJogos(meusJogos);
 };
