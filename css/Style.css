@@ -477,3 +477,21 @@ p, .TxtSobre, .TxtCatalogo {
     background: transparent;
     padding: 40px;
 }
+
+.btn-comprar {
+    width: 100%;
+    padding: 10px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #128c7e;
+    transform: scale(1.02);
+}
