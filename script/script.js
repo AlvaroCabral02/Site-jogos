@@ -227,3 +227,9 @@ function enviarWhatsApp(nomeProduto) {
 window.onload = () => {
     renderizarJogos(meusJogos);
 };
+//Função para anunciar 
+function enviarWhatsAppAnuncio() {
+    const numeroTelefone = "5541995467349"; 
+    const mensagem = `Olá! tenho interesse em anunciar o meu jogo `;
+    window.open(`https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`, '_blank');
+}
