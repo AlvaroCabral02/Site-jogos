@@ -44,16 +44,16 @@ const meusJogos = [
         raridade: "Comun", 
         estado: "Bom", 
         status: "Venda" 
-    },,
+    },
     { 
         nome: "Deadrising 3", 
-        plataforma: "Xbox One", 
+        plataforma: "xbox one", 
         img: "DEADRISING_3.jpg", 
         preco: "80,00", 
         raridade: "Comun", 
         estado: "Bom", 
         status: "Venda" 
-    },,
+    },
     { 
         nome: "Detroit Become Human", 
         plataforma: "ps4", 
@@ -62,43 +62,90 @@ const meusJogos = [
         raridade: "Comun", 
         estado: "Bom", 
         status: "Venda" 
-    },,
+    },
     { 
-        nome: "Bloodborne", 
-        plataforma: "ps5", 
-        img: "Bloodborne.jpg", 
+        nome: "FIFA 15", 
+        plataforma: "ps3", 
+        img: "FIFA15.jpg", 
         preco: "80,00", 
-        raridade: "Playstaton Hits", 
+        raridade: "Comun", 
+        estado: "Bom", 
+        status: "Venda" 
+    },
+    { 
+        nome: "FIFA 17", 
+        plataforma: "xbox one", 
+        img: "FIFA17.jpg", 
+        preco: "80,00", 
+        raridade: "Comun", 
+        estado: "Bom", 
+        status: "Venda" 
+    },
+    { 
+        nome: "Forza Motorsport 5", 
+        plataforma: "xbox one", 
+        img: "FORZA_MOTORSPORT5.jpg", 
+        preco: "80,00", 
+        raridade: "Comun", 
         estado: "Excelente", 
-        status: "Venda/Troca" 
-    },,
+        status: "Venda" 
+    },
     { 
-        nome: "Bloodborne", 
+        nome: "Horizon Forbidden West", 
         plataforma: "ps4", 
-        img: "Bloodborne.jpg", 
-        preco: "80,00", 
-        raridade: "Playstaton Hits", 
-        estado: "Excelente", 
-        status: "Venda/Troca" 
-    },,
-    { 
-        nome: "Bloodborne", 
-        plataforma: "ps4", 
-        img: "Bloodborne.jpg", 
-        preco: "80,00", 
-        raridade: "Playstaton Hits", 
-        estado: "Excelente", 
-        status: "Venda/Troca" 
-    },,
-    { 
-        nome: "Bloodborne", 
-        plataforma: "ps4", 
-        img: "Bloodborne.jpg", 
-        preco: "80,00", 
-        raridade: "Playstaton Hits", 
+        img: "HORIZON_FORBIDDEN_WEST.jpg", 
+        preco: "100,00", 
+        raridade: "Compativel com Ps5", 
         estado: "Excelente", 
         status: "Venda/Troca" 
     },
+    { 
+        nome: "The Elders Scrolls V Skyrim", 
+        plataforma: "ps3", 
+        img: "Skyrim.jpg", 
+        preco: "80,00", 
+        raridade: "Comun", 
+        estado: "Bom", 
+        status: "Venda" 
+    },
+    { 
+        nome: "Spider Man", 
+        plataforma: "ps4", 
+        img: "SPIDER_MAN.jpg", 
+        preco: "100,00", 
+        raridade: "Jogo do Ano", 
+        estado: "Excelente", 
+        status: "Venda/Troca" 
+    },
+    { 
+        nome: "The Last Of Us 1", 
+        plataforma: "ps3", 
+        img: "The_Last_Of_Us1.jpg", 
+        preco: "80,00", 
+        raridade: "Comun", 
+        estado: "Bom", 
+        status: "Venda" 
+    },
+    { 
+        nome: "The Last Of Us 2", 
+        plataforma: "ps4", 
+        img: "THE_LAST_OF_US2.JPG", 
+        preco: "110,00", 
+        raridade: "Comun", 
+        estado: "Excelente", 
+        status: "Venda/Troca" 
+    },
+    { 
+        nome: "Watch Dogs", 
+        plataforma: "xbox one", 
+        img: "WATCH_DOGS.jpg", 
+        preco: "80,00", 
+        raridade: "Comun", 
+        estado: "Excelente", 
+        status: "Venda/Troca" 
+    },
+
+
 
 ];
 
