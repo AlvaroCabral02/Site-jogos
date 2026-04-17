@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden; /* Impede que a tela balance para os lados */
+    width: 100%;
+}
 :root {
     --bg-geral: #F7F3EF;
     --sidebar-bg: #5F6F82;
@@ -494,4 +504,98 @@ p, .TxtSobre, .TxtCatalogo {
 .btn-comprar:hover {
     background-color: #128c7e;
     transform: scale(1.02);
+}
+
+/* Para telas de celular e tablet */
+@media screen and (max-width: 768px) {
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative; /* Deixa de ser fixa na lateral */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Caso tenha muitos links, eles pulam linha */
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .sidebar a {
+        padding: 10px;
+        text-align: center;
+        flex-grow: 1; /* Faz os botões dividirem o espaço igualmente */
+    }
+
+    .content {
+        margin-left: 0 !important; /* ISSO AQUI tira o buraco branco da esquerda */
+        padding: 15px;
+        width: 100%;
+        display: block;
+    }
+
+    /* Centraliza os títulos para não ficarem tortos */
+    .titleTop, .titleBottomCatalogo, .TxtCatalogo {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+#container-jogos {
+    display: flex;        
+    flex-wrap: wrap;       
+    justify-content: center; 
+    gap: 20px;            
+    padding: 20px 0;
+    width: 100%;          
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; /* Organiza foto, nome e botão de cima para baixo */
+    align-items: center;    /* Centraliza os itens dentro do card */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;           /* Largura fixa no PC para ficar uniforme */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.menu:hover {
+    transform: translateY(-5px); /* Efeito visual ao passar o mouse */
+}
+
+.imgStamp {
+    width: 100%;            /* A imagem ocupa toda a largura do card */
+    height: auto;           /* Mantém a proporção da imagem */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #container-jogos {
+        gap: 10px; /* Espaço menor em telas pequenas */
+    }
+
+    .menu {
+        /* Aqui o segredo: 45% permite 2 jogos por linha. 
+           Se quiser apenas 1 por linha, use 90%. */
+        width: 45%; 
+        min-width: 140px; 
+        padding: 10px;
+    }
+}
+
+.barra-busca input, .filtros select {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
