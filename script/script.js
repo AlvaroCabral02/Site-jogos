@@ -129,7 +129,7 @@ const meusJogos = [
     { 
         nome: "The Last Of Us 2", 
         plataforma: "ps4", 
-        img: "THE_LAST_OF_US2.JPG", 
+        img: "THE_LAST_OF_US2.jpg", 
         preco: "110,00", 
         raridade: "Comun", 
         estado: "Excelente", 
