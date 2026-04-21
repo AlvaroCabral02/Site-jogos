@@ -21,7 +21,7 @@ const meusJogos = [
     { 
         nome: "BloodBorne.jpg", 
         plataforma: "ps4", 
-        img: "Bloodborne.jpg", 
+        img: "BloodBorne.jpg", 
         preco: "80,00", 
         raridade: "Playstaton Hits", 
         estado: "Excelente", 
