@@ -123,7 +123,7 @@ body {
     text-transform: uppercase;
 }
 
-/* TExtos do site */
+/*Textos do site*/
 p, .TxtSobre, .TxtCatalogo {
     color: var(--texto-padrao);
     font-size: 15px;
@@ -144,7 +144,8 @@ p, .TxtSobre, .TxtCatalogo {
 }
 
 .menu {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: var(--card-bg);
     border-radius: var(--radius);
@@ -264,6 +265,7 @@ p, .TxtSobre, .TxtCatalogo {
 }
 
 /*MODAL*/
+/*MODAL*/
 .modal {
     display: none;
     background-color: var(--modal-bg);
@@ -271,6 +273,14 @@ p, .TxtSobre, .TxtCatalogo {
     padding: 20px 16px 16px;
     box-shadow: var(--shadow-lg);
     z-index: 9999;
+}
+
+#modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 9998;
 }
 
 #knowMore {
@@ -324,7 +334,7 @@ p, .TxtSobre, .TxtCatalogo {
     background-color: var(--botao-hover);
 }
 
-/* filtro e busca(Catálogo)*/
+/*filtro e busca (Catálogo)*/
 .barra-busca {
     max-width: 480px;
     margin: 16px auto 10px;
@@ -341,7 +351,6 @@ p, .TxtSobre, .TxtCatalogo {
     background: #fff;
     color: var(--texto-padrao);
     transition: border-color var(--transition), box-shadow var(--transition);
-    border-bottom: 2px solid #dde3ea;
 }
 
 .barra-busca input:focus {
@@ -430,7 +439,7 @@ iframe {
     display: block;
 }
 
-/*Formulario e botoes */
+/*Formulario e botoes*/
 .formulario-opiniao {
     margin: 24px auto;
     text-align: center;

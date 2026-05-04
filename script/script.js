@@ -19,9 +19,9 @@ const meusJogos = [
         status: "Apenas Venda" 
     },
     { 
-        nome: "BloodBorne", 
+        nome: "Bloodborne", 
         plataforma: "ps4", 
-        img: "BloodBorne.jpg", 
+        img: "Bloodborne.jpg", 
         preco: "80,00", 
         raridade: "Playstaton Hits", 
         estado: "Excelente", 
@@ -129,7 +129,7 @@ const meusJogos = [
     { 
         nome: "The Last Of Us 2", 
         plataforma: "ps4", 
-        img: "THE_LAST_OF_US2.jpg", 
+        img: "THE_LAST_OF_US2.JPG", 
         preco: "110,00", 
         raridade: "Comun", 
         estado: "Excelente", 
@@ -188,33 +188,53 @@ function filtrarTudo() {
 //MODAL 
 function exibirDetalhes(jogoRaw, botao) {
     const jogo = JSON.parse(decodeURIComponent(jogoRaw));
-    
-    const txt1 = document.getElementById("txt1");
-    const txt2 = document.getElementById("txt2");
-    const txt3 = document.getElementById("txt3");
-    const modal = document.getElementById("knowMore");
 
-    txt1.innerHTML = `<strong>${jogo.nome}</strong>`;
-    txt2.innerHTML = `
+    document.getElementById("txt1").innerHTML = `<strong>${jogo.nome}</strong>`;
+    document.getElementById("txt2").innerHTML = `
         <b>Preço:</b> R$ ${jogo.preco}<br>
         <b>Plataforma:</b> ${jogo.plataforma.toUpperCase()}<br>
         <b>Estado:</b> ${jogo.estado}<br>
         <b>Raridade:</b> ${jogo.raridade}
     `;
-    txt3.innerHTML = `<b>Disponível para:</b> ${jogo.status}`;
+    document.getElementById("txt3").innerHTML = `<b>Disponível para:</b> ${jogo.status}`;
 
-    modal.style.display = "block";
+    const modal    = document.getElementById("knowMore");
+    const backdrop = document.getElementById("modal-backdrop");
+
+    // Sempre reseta display e z-index
+    modal.style.display  = "block";
+    modal.style.position = "fixed";
+    modal.style.zIndex   = "9999";
+    backdrop.style.display = "block";
 
     if (window.innerWidth > 768) {
+        // Desktop: abre abaixo do botão
         const rect = botao.getBoundingClientRect();
-        modal.style.left = `${rect.left + rect.width / 2}px`;
-        modal.style.top = `${rect.bottom + window.scrollY}px`;
-        modal.style.transform = "translateX(-50%)";
+        const mW = 310, mH = 180, gap = 8;
+        const vw = window.innerWidth, vh = window.innerHeight;
+
+        let top  = rect.bottom + gap;
+        if (top + mH > vh) top = rect.top - mH - gap;
+        if (top < gap)     top = gap;
+
+        let left = rect.left + rect.width / 2 - mW / 2;
+        if (left < gap)            left = gap;
+        if (left + mW > vw - gap)  left = vw - mW - gap;
+
+        modal.style.top       = top  + "px";
+        modal.style.left      = left + "px";
+        modal.style.transform = "none";
+    } else {
+        // Mobile: sempre centralizado — reseta qualquer inline style do desktop
+        modal.style.top       = "50%";
+        modal.style.left      = "50%";
+        modal.style.transform = "translate(-50%, -50%)";
     }
 }
 
 function closeModal() {
-    document.getElementById("knowMore").style.display = 'none';
+    document.getElementById("knowMore").style.display        = "none";
+    document.getElementById("modal-backdrop").style.display  = "none";
 }
 
 function enviarWhatsApp(nomeProduto) {
