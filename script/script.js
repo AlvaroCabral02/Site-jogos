@@ -19,7 +19,7 @@ const meusJogos = [
         status: "Apenas Venda" 
     },
     { 
-        nome: "BloodBorne.jpg", 
+        nome: "BloodBorne", 
         plataforma: "ps4", 
         img: "BloodBorne.jpg", 
         preco: "80,00", 
