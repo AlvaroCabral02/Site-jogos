@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- PAGINA INICIAL COM OS MAIS VENDIDOS -->
 <html>
 
 <head>
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Case Games</title>
     <link rel="stylesheet" href="css/Style.css" type="text/css">
-    <link rel="icon" type="image/png" href="img/Logo.png">
+    <link rel="icon" type="image/png" href="img/LOGO.png">
 </head>
 
 <body>
@@ -21,95 +20,80 @@
     <div class="content">
         <h2 class="titleTop">Full Case Games</h2>
         <p class="TxtSobre">
-            Conheça nosso catalogo e procure o jogo que falta na sua coleção
-            a Full Case Games está aqui para ajudar você !!
+            Conheça nosso catalogo e procure o jogo que falta na sua coleção,
+            a Full Case Games está aqui para ajudar você!!
         </p>
 
         <h3 class="titleBottom">Jogos mais Procurados</h3>
 
-    <!-- Primeiro jogo -->
+        <!-- ✅ Wrapper adicionado para o flex funcionar -->
+        <div id="jogos-destaque">
 
-    <div class="menu">
-        <img
-            class="imgStamp"
-            src="img/BloodBorne.jpg"
-            alt="BloodBorne"
-            onclick="toggleInfo(this)">
+            <!-- Primeiro jogo -->
+            <div class="menu">
+                <img
+                    class="imgStamp"
+                    src="img/BloodBorne.jpg"
+                    alt="BloodBorne"
+                    onclick="toggleInfo(this)">
+                <h3>BloodBorne</h3>
+                <p class="preco">R$100</p>
+                <div class="info-jogos">
+                    <p>Raridade: Comum</p>
+                    <p>Estado: Excelente</p>
+                    <p>Plataforma: PS4</p>
+                </div>
+            </div>
 
-        <h3>BloodBorne</h3>
+            <!-- Segundo jogo -->
+            <div class="menu">
+                <img
+                    class="imgStamp"
+                    src="img/DARK_SOULS_III.jpg"
+                    alt="Dark Souls III"
+                    onclick="toggleInfo(this)">
+                <h3>Dark Souls III</h3>
+                <p class="preco">R$150</p>
+                <div class="info-jogos">
+                    <p>Raridade: Edição completa</p>
+                    <p>Estado: Perfeito</p>
+                    <p>Plataforma: PS4</p>
+                </div>
+            </div>
 
-        <p class="preco">
-            R$100
-        </p>
+            <!-- Terceiro jogo -->
+            <div class="menu">
+                <img
+                    class="imgStamp"
+                    src="img/GODOFWAR4.jpg"
+                    alt="God of War"
+                    onclick="toggleInfo(this)">
+                <h3>God of War</h3>
+                <p class="preco">R$80</p>
+                <div class="info-jogos">
+                    <p>Raridade: Bundle</p>
+                    <p>Estado: Usado</p>
+                    <p>Plataforma: PS4</p>
+                </div>
+            </div>
 
-        <div class="info-jogos">
-            <p>Raridade: Comum</p>
-            <p>Estado: Excelente</p>
-            <p>Plataforma: PS4</p>
         </div>
-    </div>
 
-    <!-- Segundo jogo -->
-
-    <div class="menu">
-        <img
-            class="imgStamp"
-            src="img/DARK_SOULS_III.jpg"
-            alt="Dark Souls III"
-            onclick="toggleInfo(this)">
-
-        <h3>Dark Souls III</h3>
-
-        <p class="preco">
-            R$150
-        </p>
-
-        <div class="info-jogos">
-            <p>Raridade: Edição completa</p>
-            <p>Estado: Perfeito</p>
-            <p>Plataforma: PS4</p>
-        </div>
-    </div>
-
-    <!-- Terceiro jogo -->
-
-    <div class="menu">
-        <img
-            class="imgStamp"
-            src="img/GODOFWAR4.jpg"
-            alt="God of War"
-            onclick="toggleInfo(this)">
-
-        <h3>God of War</h3>
-
-        <p class="preco">
-            R$80
-        </p>
-
-        <div class="info-jogos">
-            <p>Raridade: Bundle</p>
-            <p>Estado: Usado</p>
-            <p>Plataforma: PS4</p>
-        </div>
-    </div>
-
-    <!-- Formulario de opinião -->
-
-    <div class="formulario-opiniao">
+        <!-- Formulario de opinião -->
+        <div class="formulario-opiniao">
             <p class="TxtSobre">
-           Nos ajude a melhorar e deixe a sua opinião sobre o nosso site
+                Nos ajude a melhorar e deixe a sua opinião sobre o nosso site
             </p>
-        <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc8xmEU9so7PLU64XxapUF1sjrjRG4FhjBWW5hDojGy9HgBcg/viewform?usp=publish-editor" 
-            target="_blank" 
-            class="btn-formulario">
-            Responder formulário
-        </a>
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc8xmEU9so7PLU64XxapUF1sjrjRG4FhjBWW5hDojGy9HgBcg/viewform?usp=publish-editor"
+                target="_blank"
+                class="btn-formulario">
+                Responder formulário
+            </a>
+        </div>
+
     </div>
 
-
-</div>
-    <!-- Referência ao arquivo Javascript -->
     <script src="script/script.js"></script>
 
 </body>

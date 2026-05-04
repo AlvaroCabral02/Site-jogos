@@ -134,7 +134,9 @@ p, .TxtSobre, .TxtCatalogo {
 }
 
 /*grid dos jogos*/
-#container-jogos {
+#container-jogos,
+#jogos-destaque
+{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
